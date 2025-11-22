@@ -1,3 +1,4 @@
+// taken from https://github.com/switchangel/strudel-scripts/blob/main/allscripts.js
 register('fill', function (pat) {
   return new Pattern(function (state) {
     const lookbothways = 1;
