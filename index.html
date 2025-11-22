@@ -1,0 +1,45 @@
+---
+---
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+      }
+      #logo { width: 200px }
+      .stru {
+        width: 600px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    <script>
+    </script>
+    <script src="https://unpkg.com/@strudel/repl@latest"></script>
+  </head>
+  <body>
+    <img id="logo" src="assets/strudel.png"/>
+    <h1>stru</h1>
+    <h2>Strudel.cc packages collection</h2>
+    <div class="stru">
+      <strudel-editor>
+<!--
+setcps(1)
+n("<0 1 2 3 4>*8").scale('G4 minor')
+.s("gm_lead_6_voice")
+.clip(sine.range(.2,.8).slow(8))
+.jux(rev)
+.room(2)
+.sometimes(add(note("12")))
+.lpf(perlin.range(200,20000).slow(4))
+-->
+      </strudel-editor>
+    </div>
+  </body>
+</html>
+
