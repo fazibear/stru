@@ -37,8 +37,10 @@
       <h4>all.js: Import multiple files</h4>
       <strudel-editor>
         <!--
-        await import('https://stru.fazibear.me/import_all.js');
-        await importAll('sam.js', 'styles.js');
+          await import('https://stru.fazibear.me/all.js')
+          await importAll('sam.js', 'style.js')
+
+          silence
         -->
       </strudel-editor>
     </div>
@@ -46,11 +48,10 @@
       <h4>sam.js: <a href="https://discordier.github.io/sam/">SAM</a> support.</h4>
       <strudel-editor>
         <!--
-        // @title die @by fazibear
-        await import('https://stru.fazibear.me/sam.js');
-        sam({die: 'die bitch'}, {singmode: false})
-        $: s("bd sd").fast(2)
-        $: s("die").fast(2)
+          await import('https://stru.fazibear.me/sam.js');
+          sam({die: 'die bitch'}, {singmode: false})
+          $: s("bd sd").fast(2)
+          $: s("die").fast(2)
         -->
       </strudel-editor>
     </div>
