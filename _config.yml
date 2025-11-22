@@ -8,3 +8,4 @@ plugins:
 jekyll-minifier:
   compress_javascript: true
   remove_comments: false
+  preserve_line_breaks: true
