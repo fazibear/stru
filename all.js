@@ -14,7 +14,7 @@
         url = 'https://stru.fazibear.me/' + i;
       }
       logger('[importAll] Importing ' + url + ' ...');
-      import(url)
+      await import(url)
     };
   }
 })();
