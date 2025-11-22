@@ -7,3 +7,4 @@ plugins:
 
 jekyll-minifier:
   compress_javascript: true
+  remove_comments: false
