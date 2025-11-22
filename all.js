@@ -1,6 +1,6 @@
 (function(){
   window.importAll = async function(...imports) {
-    for(const i in imports) {
+    for(const i of imports) {
       let url = '';
       if (typeof i !== 'string') {
         continue;
