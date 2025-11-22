@@ -14,7 +14,7 @@
     const part = new Uint8Array(wav);
     return URL.createObjectURL(new Blob([part],{type:'audio/wav'}));
   }
-  async function sam(sentences, options) {
+  window.sam = async function(sentences, options) {
     const urlMap = {};
     for(const name in sentences) {
       logger('[sam] Creating '+name+' with: '+sentences[name]);
@@ -22,5 +22,4 @@
     }
     await samples(urlMap);
   }
-  window.sam = sam;
 })();
