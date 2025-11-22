@@ -17,6 +17,13 @@
         margin-left: auto;
         margin-right: auto;
       }
+      .cm-gutter, .cm-panel {
+        background: black !important;
+      }
+      h4 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
     </style>
     <script>
     </script>
@@ -27,17 +34,19 @@
     <h1>stru</h1>
     <h2>Strudel.cc packages collection</h2>
     <div class="stru">
+      <h4>sam.js: <a href="https://discordier.github.io/sam/">SAM</a> support.</h4>
       <strudel-editor>
-<!--
-setcps(1)
-n("<0 1 2 3 4>*8").scale('G4 minor')
-.s("gm_lead_6_voice")
-.clip(sine.range(.2,.8).slow(8))
-.jux(rev)
-.room(2)
-.sometimes(add(note("12")))
-.lpf(perlin.range(200,20000).slow(4))
--->
+        <!--
+        // @title die @by fazibear
+        import('https://raw.githubusercontent.com/fazibear/strudel-stuff/main/load.js');
+        await load('fazibear:ssd.js', 'fazibear:midi.js', 'fazibear:humanize.js', 'fazibear:style.js', 'fazibear:trancegate.js', 'fazibear:guitar.js', 'fazibear:sam.js')
+
+        sam({die: 'die bitch'}, {singmode: false})
+
+        $: s("bd sd").fast(2)
+
+        $: s("die").fast(2)
+        -->
       </strudel-editor>
     </div>
   </body>
