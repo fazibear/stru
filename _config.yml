@@ -9,3 +9,6 @@ jekyll-minifier:
   compress_javascript: true
   remove_comments: false
   preserve_line_breaks: true
+  remove_multi_spaces: false
+  remove_intertag_spaces: false
+  remove_spaces_inside_tags: false
