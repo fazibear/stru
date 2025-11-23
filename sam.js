@@ -1,5 +1,5 @@
-(function(){
-  import('https://unpkg.com/sam-js');
+await (async function(){
+  await import('https://unpkg.com/sam-js');
   function createSamSpeechDataUrl(text, options = {}) {
     const sam = new SamJs({
       singmode: false,
