@@ -1,7 +1,6 @@
 ---
 description: Load multiple files from stru.
 example: |
-  await import('https://stru.fazibear.me/all.js')
   await importAll('sam.js', 'style.js')
 ---
 (function(){

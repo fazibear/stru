@@ -20,10 +20,11 @@
       .cm-scroller {
         overflow-x: hidden !important;
       }
-      h4 {
-        margin-top: 0px;
-        margin-bottom: 10px;
+
+      a, a:visited {
+        color: white;
       }
+
     </style>
     <script>
     </script>
@@ -31,30 +32,27 @@
   <body>
     <img id="logo" src="assets/strudel.png"/>
     <h1>stru</h1>
-    <h2>Strudel.cc packages collection</h2>
-    <div class="stru">
-      <h4>all.js: Import multiple files</h4>
-      <strudel-editor>
-        <!--
-          await import('https://stru.fazibear.me/all.js')
-          await importAll('sam.js', 'style.js')
+    <h2>Strudel.cc packages collection!</h2>
+    <div>
+      {% for script in site.scripts %}
+        <a href="#{{script.name}}">{{script.name}}</a>
+      {% endfor %}
+    </div>
 
-          silence
-        -->
-      </strudel-editor>
-    </div>
-    <div class="stru">
-      <h4>sam.js: <a href="https://discordier.github.io/sam/">SAM</a> support.</h4>
+
+    {% for script in site.scripts %}
+    <div class="stru" id="{{script.name}}">
+      <h2>{{script.name}}</h2>
+      <h4>{{script.description}}</h4>
       <strudel-editor>
         <!--
-          await import('https://stru.fazibear.me/sam.js');
-          sam({die: 'die bitch'}, {singmode: false})
-          $: s("bd sd").fast(2)
-          $: s("die").fast(2)
+await import('https://stru.fazibear.me/{{script.name}}')
+{{ script.example }}
         -->
       </strudel-editor>
     </div>
-  <script src="https://unpkg.com/@strudel/repl@latest"></script>
+    {% endfor %}
+    <script src="https://unpkg.com/@strudel/repl@latest"></script>
   </body>
 </html>
 
