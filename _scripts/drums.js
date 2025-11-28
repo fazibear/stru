@@ -26,7 +26,7 @@
   });
 
   window.drums = function(n) {
-    return note(n).ssd()
+    return note(n).drums()
   }
 })();
 
