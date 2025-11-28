@@ -24,16 +24,9 @@
     }
   };
 
-  const OTHER = {
-    '~~': '~',
-    '~~~': '~',
-    '~~~~': '~',
-
-  }
-
   register('drums', (pats) => {
     return pats.fmap(pat => {
-      return {note: DRUMS_MIDI_MAP[window.DRUMS_MIDI][pat.note] || OTHER[pat.note] || pat.note};
+      return {note: DRUMS_MIDI_MAP[window.DRUMS_MIDI][pat.note] || pat.note};
     });
   });
 
