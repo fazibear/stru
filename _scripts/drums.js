@@ -1,7 +1,7 @@
 ---
 ---
 (function(){
-  const MIDI_DRUMS = {
+  const DRUMS_MIDI_MAP = {
     'GM': {
       'bd': 'c2',
       'sd': 'd2',
@@ -21,9 +21,11 @@
 
   register('drums', (pats) => {
     return pats.fmap(pat => {
-      return {note: MIDI_DRUMS['GM'][pat.note] || pat.note};
+      return {note: DRUMS_MIDI_MAP[window.DRUMS_MIDI][pat.note] || pat.note};
     });
   });
+
+  window.DRUMS_MIDI = 'GM';
 
   window.drums = function(n) {
     return note(n).drums()
